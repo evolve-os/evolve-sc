@@ -60,7 +60,7 @@ class ScSidebar(Gtk.ListBox):
         self.parent_stack = parent_stack
 
         gtkTheme = self.get_settings().get_property("gtk-theme-name").lower()
-        if gtkTheme.startswith("arc ") or gtkTheme.startswith("arc-"):
+        if gtkTheme.startswith("arc ") or gtkTheme.startswith("arc-") or gtkTheme == "arc":
             self.get_style_context().add_class("arc-sidebar")
 
         items = [
