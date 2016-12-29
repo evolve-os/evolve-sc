@@ -25,11 +25,11 @@ import sys
 import threading
 
 
-class ScPlaceholderBox(Gtk.VBox):
+class ScPlaceholderBox(Gtk.Box):
     """ So we don't show empty boxes :) """
 
     def __init__(self):
-        Gtk.VBox.__init__(self)
+        Gtk.Box.__init__(self, Gtk.Orientation.VERTICAL)
         lab = Gtk.Label("Sorry, this page is not yet implemented.")
         self.add(lab)
 
@@ -157,7 +157,7 @@ class ScMainWindow(Gtk.ApplicationWindow):
         self.groups_view = ScGroupsView(self)
 
         # Main horizontal layout (Sidebar|VIEW)
-        self.main_layout = Gtk.HBox(0)
+        self.main_layout = Gtk.Box(Gtk.Orientation.HORIZONTAL, 0)
         self.add(self.main_layout)
 
         self.sidebar = ScSidebar(self, self.stack)
@@ -170,7 +170,7 @@ class ScMainWindow(Gtk.ApplicationWindow):
         sep.get_style_context().add_class("sidebar-separator")
         self.main_layout.pack_start(sep, False, False, 0)
 
-        tmpvbox = Gtk.VBox(0)
+        tmpvbox = Gtk.Box(Gtk.Orientation.VERTICAL, 0)
         tmpvbox.pack_start(self.stack, True, True, 0)
         tmpvbox.pack_start(self.basket, False, False, 0)
         self.main_layout.pack_start(tmpvbox, True, True, 0)

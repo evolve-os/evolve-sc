@@ -51,7 +51,7 @@ class ScChangelogEntry(Gtk.EventBox):
     def __init__(self, obj, history):
         Gtk.EventBox.__init__(self)
 
-        hbox = Gtk.HBox(0)
+        hbox = Gtk.Box(Gtk.Orientation.VERTICAL, 0)
         self.add(hbox)
 
         # format name to correlate with git entry.
@@ -74,7 +74,7 @@ class ScChangelogEntry(Gtk.EventBox):
         main_lab = Gtk.Label("<b>%s</b>" % nom)
         main_lab.set_use_markup(True)
 
-        vbox = Gtk.VBox(0)
+        vbox = Gtk.Box(Gtk.Orientation.VERTICAL, 0)
         vbox.set_valign(Gtk.Align.START)
         hbox.pack_start(vbox, True, True, 0)
 
@@ -215,13 +215,13 @@ class ScUpdateObject(GObject.Object):
         return sorted(ret, key=attrgetter('release'), reverse=True)
 
 
-class LoadingPage(Gtk.VBox):
+class LoadingPage(Gtk.Box):
     """ Simple loading page, nothing fancy. """
 
     spinner = None
 
     def __init__(self):
-        Gtk.VBox.__init__(self)
+        Gtk.Box.__init__(self, Gtk.Orientation.VERTICAL)
 
         self.set_valign(Gtk.Align.CENTER)
         self.set_halign(Gtk.Align.CENTER)
@@ -238,13 +238,13 @@ class LoadingPage(Gtk.VBox):
         self.label.set_property("margin", 20)
 
 
-class UpdatingPage(Gtk.VBox):
+class UpdatingPage(Gtk.Box):
     """ Simple loading page, nothing fancy. """
 
     spinner = None
 
     def __init__(self):
-        Gtk.VBox.__init__(self)
+        Gtk.Box.__init__(self, Gtk.Orientation.VERTICAL)
 
         self.set_valign(Gtk.Align.CENTER)
         self.set_halign(Gtk.Align.CENTER)
@@ -261,7 +261,7 @@ class UpdatingPage(Gtk.VBox):
         self.label.set_property("margin", 20)
 
 
-class ScUpdatesView(Gtk.VBox):
+class ScUpdatesView(Gtk.Box):
 
     installdb = None
     packagedb = None
@@ -307,7 +307,7 @@ class ScUpdatesView(Gtk.VBox):
         GObject.idle_add(self.init_view)
 
     def __init__(self, basket, appsystem):
-        Gtk.VBox.__init__(self, 0)
+        Gtk.Box.__init__(self, Gtk.Orientation.VERTICAL, 0)
         self.basket = basket
         self.appsystem = appsystem
         self.basket.connect("basket-changed", self.on_basket_changed)
@@ -320,11 +320,11 @@ class ScUpdatesView(Gtk.VBox):
         self.load_page = LoadingPage()
         self.stack.add_named(self.load_page, "loading")
 
-        main_box = Gtk.VBox(0)
+        main_box = Gtk.Box(Gtk.Orientation.VERTICAL, 0)
         self.stack.add_named(main_box, "updates")
 
         # Our update checkerer
-        update_box = Gtk.VBox(0)
+        update_box = Gtk.Box(Gtk.Orientation.VERTICAL, 0)
         # Main toolbar
         toolbar = Gtk.Toolbar()
         sep = Gtk.SeparatorToolItem()
@@ -342,7 +342,7 @@ class ScUpdatesView(Gtk.VBox):
         toolbar.add(refresh_button)
 
         self.stack.add_named(update_box, "check")
-        updatec = Gtk.VBox(0)
+        updatec = Gtk.Box(Gtk.Orientation.VERTICAL, 0)
         update_box.pack_start(updatec, True, True, 0)
         updatec.set_halign(Gtk.Align.CENTER)
         updatec.set_valign(Gtk.Align.CENTER)
@@ -680,15 +680,12 @@ class ScUpdatesView(Gtk.VBox):
                 total_size += model[child_path][6]
         # Skip it.
         if total_update == 0:
-            # "2 of 10 updates selected"
-            st = _("{} of {} updates selected")
-            self.selection_label.set_text(st.format(
+            self.selection_label.set_text("{} of {} updates selected".format(
                 total_update, total_available))
             self.update_btn.set_sensitive(False)
             return
         dlSize = sc_format_size_local(total_size, True)
-        # "2 of 10 updates selected (20.05MB to download)"
-        newLabel = _("{} of {} updates selected ({} to download)").format(
+        newLabel = "{} of {} updates selected ({} to download)".format(
                    total_update, total_available, dlSize)
         self.update_btn.set_sensitive(True)
         self.selection_label.set_text(newLabel)

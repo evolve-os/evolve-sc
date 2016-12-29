@@ -22,13 +22,13 @@ INDEX_FIELD_ICON = 2
 INDEX_FIELD_ARROW = 3
 
 
-class LoadingPage(Gtk.VBox):
+class LoadingPage(Gtk.Box):
     """ Simple loading page, nothing fancy. """
 
     spinner = None
 
     def __init__(self):
-        Gtk.VBox.__init__(self)
+        Gtk.Box.__init__(self, Gtk.Orientation.VERTICAL)
 
         self.set_valign(Gtk.Align.CENTER)
         self.set_halign(Gtk.Align.CENTER)
@@ -45,7 +45,7 @@ class LoadingPage(Gtk.VBox):
         self.label.set_property("margin", 20)
 
 
-class ScPackageView(Gtk.VBox):
+class ScPackageView(Gtk.Box):
 
     scroll = None
     tview = None
@@ -66,7 +66,7 @@ class ScPackageView(Gtk.VBox):
         return self.stack.get_visible_child_name() != "packages"
 
     def __init__(self, owner, basket, appsystem):
-        Gtk.VBox.__init__(self, 0)
+        Gtk.Box.__init__(self, Gtk.Orientation.VERTICAL, 0)
         self.basket = basket
         self.appsystem = appsystem
         self.owner = owner

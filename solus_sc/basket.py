@@ -150,7 +150,7 @@ class BasketView(Gtk.Revealer):
                 self.operation_count()))
         else:
             if '::third-party::' in self.operations:
-                lab = _(" - This may take <b>some time!</b>")
+                lab = " - This may take <b>some time!</b>"
                 self.progresslabel.set_markup(
                     self.operations['::third-party::'] + lab)
             else:
@@ -260,12 +260,10 @@ class BasketView(Gtk.Revealer):
 
                     cd = self.current_dl_package
                     if cd == 0 and self.total_packages == 0:
-                        # "Downloading eopkg-index.xml.xz (10kb/s)
-                        st = _("Downloading {} ({})")
-                        self.set_progress(prog, st.format(package, speed))
+                        self.set_progress(prog, "Downloading {} ({})".format(
+                            package, speed))
                     else:
-                        # "Downloading 1 of 10: bash (10kb/s)
-                        disp = _("Downloading {} of {}: {} ({})")
+                        disp = "Downloading {} of {}: {} ({})"
                         self.set_progress(prog, disp.format(
                             self.current_dl_package,
                             self.total_packages, package, speed))
@@ -274,8 +272,7 @@ class BasketView(Gtk.Revealer):
                         self.current_dl_package += 1
                 else:
                     # print args
-                    # Downloading eopkg-index.xml.sha1sum
-                    self.set_progress(1.0, _("Downloading {}").format(args[1]))
+                    self.set_progress(1.0, "Downloading %s" % args[1])
         elif signal == 'finished' or signal is None:
             if self.cb is not None:
                 self.cb()
@@ -342,7 +339,7 @@ class BasketView(Gtk.Revealer):
 
         lab = Gtk.Label(markup)
         lab.set_use_markup(True)
-        box = Gtk.HBox(0)
+        box = Gtk.Box(Gtk.Orientation.HORIZONTAL, 0)
         box.set_property("margin", 5)
         box.pack_start(lab, True, True, 0)
         dlg.get_content_area().pack_start(box, False, False, 0)

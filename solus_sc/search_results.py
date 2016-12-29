@@ -22,13 +22,13 @@ INDEX_FIELD_ICON = 2
 INDEX_FIELD_ARROW = 3
 
 
-class LoadingPage(Gtk.VBox):
+class LoadingPage(Gtk.Box):
     """ Simple loading page, nothing fancy. """
 
     spinner = None
 
     def __init__(self):
-        Gtk.VBox.__init__(self)
+        Gtk.Box.__init__(self, Gtk.Orientation.VERTICAL)
 
         self.set_valign(Gtk.Align.CENTER)
         self.set_halign(Gtk.Align.CENTER)
@@ -45,13 +45,13 @@ class LoadingPage(Gtk.VBox):
         self.label.set_property("margin", 20)
 
 
-class BlankPage(Gtk.VBox):
+class BlankPage(Gtk.Box):
     """ Simple placeholder page, nothing fancy. """
 
     label = None
 
     def __init__(self):
-        Gtk.VBox.__init__(self)
+        Gtk.Box.__init__(self, Gtk.Orientation.VERTICAL)
 
         self.set_valign(Gtk.Align.CENTER)
         self.set_halign(Gtk.Align.CENTER)
@@ -64,13 +64,13 @@ class BlankPage(Gtk.VBox):
         self.label.set_property("margin", 20)
 
 
-class NotFoundPage(Gtk.VBox):
+class NotFoundPage(Gtk.Box):
     """ Found no search results. """
 
     label = None
 
     def __init__(self):
-        Gtk.VBox.__init__(self)
+        Gtk.Box.__init__(self, Gtk.Orientation.VERTICAL)
 
         self.set_valign(Gtk.Align.CENTER)
         self.set_halign(Gtk.Align.CENTER)
@@ -83,7 +83,7 @@ class NotFoundPage(Gtk.VBox):
         self.label.set_property("margin", 20)
 
 
-class ScSearchResults(Gtk.VBox):
+class ScSearchResults(Gtk.Box):
 
     scroll = None
     tview = None
@@ -99,7 +99,7 @@ class ScSearchResults(Gtk.VBox):
     search_page = None
 
     def __init__(self, search_page, owner):
-        Gtk.VBox.__init__(self, 0)
+        Gtk.Box.__init__(self, Gtk.Orientation.VERTICAL, 0)
         self.basket = owner.basket
         self.appsystem = owner.appsystem
         self.owner = owner

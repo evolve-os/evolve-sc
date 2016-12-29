@@ -16,7 +16,7 @@ from .search_results import ScSearchResults
 from .details import PackageDetailsView
 
 
-class ScSearchView(Gtk.VBox):
+class ScSearchView(Gtk.Box):
     """ Facilitate searching of the repo """
 
     flowbox = None
@@ -53,10 +53,10 @@ class ScSearchView(Gtk.VBox):
         t = Gtk.StackTransitionType.SLIDE_LEFT_RIGHT
         self.stack.set_transition_type(t)
 
-        vbox = Gtk.VBox(0)
+        vbox = Gtk.Box(Gtk.Orientation.VERTICAL, 0)
         self.stack.add_named(vbox, "search")
 
-        hbox = Gtk.HBox(0)
+        hbox = Gtk.Box(Gtk.Orientation.HORIZONTAL, 0)
         hbox.set_property("margin", 40)
         hbox.get_style_context().add_class("linked")
         vbox.pack_start(hbox, False, False, 0)
