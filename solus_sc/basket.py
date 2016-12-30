@@ -150,7 +150,7 @@ class BasketView(Gtk.Revealer):
                 self.operation_count()))
         else:
             if '::third-party::' in self.operations:
-                lab = " - This may take <b>some time!</b>"
+                lab = _(" - This may take <b>some time!</b>")
                 self.progresslabel.set_markup(
                     self.operations['::third-party::'] + lab)
             else:
