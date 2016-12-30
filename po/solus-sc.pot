@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-11-05 17:32+0000\n"
+"POT-Creation-Date: 2016-12-29 17:23+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -29,6 +29,10 @@ msgstr ""
 #. The number (more than one) of package operations to be performed
 #: ../solus_sc/basket.py:149
 msgid "{} operations pending"
+msgstr ""
+
+#: ../solus_sc/basket.py:153
+msgid " - This may take <b>some time!</b>"
 msgstr ""
 
 #. Only one package operation to be performed
@@ -73,64 +77,85 @@ msgstr ""
 msgid "Removed {} of {}: {}"
 msgstr ""
 
-#: ../solus_sc/basket.py:320
+#. "Downloading eopkg-index.xml.xz (10kb/s)
+#: ../solus_sc/basket.py:264
+msgid "Downloading {} ({})"
+msgstr ""
+
+#. "Downloading 1 of 10: bash (10kb/s)
+#: ../solus_sc/basket.py:268
+msgid "Downloading {} of {}: {} ({})"
+msgstr ""
+
+#. print args
+#. Downloading eopkg-index.xml.sha1sum
+#: ../solus_sc/basket.py:278
+msgid "Downloading {}"
+msgstr ""
+
+#: ../solus_sc/basket.py:323
 msgid "The following dependencies need to be installed to continue"
 msgstr ""
 
-#: ../solus_sc/basket.py:330
+#: ../solus_sc/basket.py:333
 msgid "Installation confirmation"
 msgstr ""
 
-#: ../solus_sc/basket.py:333
+#: ../solus_sc/basket.py:336
 msgid "The following dependencies need to be removed to continue"
 msgstr ""
 
-#: ../solus_sc/basket.py:334
+#: ../solus_sc/basket.py:337
 msgid "Removal confirmation"
 msgstr ""
 
-#: ../solus_sc/basket.py:337
+#: ../solus_sc/basket.py:340
 msgid "The following dependencies need to be updated to continue"
 msgstr ""
 
-#: ../solus_sc/basket.py:338
+#: ../solus_sc/basket.py:341
 msgid "Update confirmation"
 msgstr ""
 
-#: ../solus_sc/basket.py:365
+#: ../solus_sc/basket.py:368
 msgid "Cancel"
 msgstr ""
 
-#: ../solus_sc/basket.py:367 ../solus_sc/details.py:139
-#: ../solus_sc/thirdparty.py:162
+#: ../solus_sc/basket.py:370 ../solus_sc/details.py:142
+#: ../solus_sc/thirdparty.py:194
 msgid "Install"
 msgstr ""
 
-#: ../solus_sc/basket.py:369
+#: ../solus_sc/basket.py:372
 msgid "Update"
 msgstr ""
 
 #. Remove button
-#: ../solus_sc/basket.py:374 ../solus_sc/details.py:147
+#: ../solus_sc/basket.py:377 ../solus_sc/details.py:150
 msgid "Remove"
 msgstr ""
 
 #. Visit the website of the package
-#: ../solus_sc/details.py:181
+#: ../solus_sc/details.py:184
 msgid "Website"
 msgstr ""
 
 #. Donation button launches website to donate to authors
-#: ../solus_sc/details.py:188
+#: ../solus_sc/details.py:191
 msgid "Donate"
 msgstr ""
 
 #. Size of the package when installed locally
-#: ../solus_sc/details.py:194
+#: ../solus_sc/details.py:197
 msgid "Installed size"
 msgstr ""
 
-#: ../solus_sc/details.py:244
+#. License field
+#: ../solus_sc/details.py:205
+msgid "License"
+msgstr ""
+
+#: ../solus_sc/details.py:257
 msgid "Cannot remove core system software"
 msgstr ""
 
@@ -222,7 +247,7 @@ msgstr ""
 msgid "Security & core updates"
 msgstr ""
 
-#: ../solus_sc/thirdparty.py:160 ../solus_sc/updates_view.py:338
+#: ../solus_sc/thirdparty.py:192 ../solus_sc/updates_view.py:338
 #: ../solus_sc/updates_view.py:340 ../solus_sc/updates_view.py:434
 msgid "Check for updates"
 msgstr ""
@@ -265,6 +290,16 @@ msgstr ""
 #. Apply the updates
 #: ../solus_sc/updates_view.py:448 ../solus_sc/updates_view.py:449
 msgid "Update Selected"
+msgstr ""
+
+#. "2 of 10 updates selected"
+#: ../solus_sc/updates_view.py:684
+msgid "{} of {} updates selected"
+msgstr ""
+
+#. "2 of 10 updates selected (20.05MB to download)"
+#: ../solus_sc/updates_view.py:691
+msgid "{} of {} updates selected ({} to download)"
 msgstr ""
 
 #: ../solus_update/application.py:301
