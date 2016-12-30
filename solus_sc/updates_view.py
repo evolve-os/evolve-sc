@@ -51,7 +51,7 @@ class ScChangelogEntry(Gtk.EventBox):
     def __init__(self, obj, history):
         Gtk.EventBox.__init__(self)
 
-        hbox = Gtk.Box(Gtk.Orientation.VERTICAL, 0)
+        hbox = Gtk.Box(Gtk.Orientation.HORIZONTAL, 0)
         self.add(hbox)
 
         # format name to correlate with git entry.
@@ -680,12 +680,15 @@ class ScUpdatesView(Gtk.Box):
                 total_size += model[child_path][6]
         # Skip it.
         if total_update == 0:
-            self.selection_label.set_text("{} of {} updates selected".format(
+            # "2 of 10 updates selected"
+            st = _("{} of {} updates selected")
+            self.selection_label.set_text(st.format(
                 total_update, total_available))
             self.update_btn.set_sensitive(False)
             return
         dlSize = sc_format_size_local(total_size, True)
-        newLabel = "{} of {} updates selected ({} to download)".format(
+        # "2 of 10 updates selected (20.05MB to download)"
+        newLabel = _("{} of {} updates selected ({} to download)").format(
                    total_update, total_available, dlSize)
         self.update_btn.set_sensitive(True)
         self.selection_label.set_text(newLabel)
