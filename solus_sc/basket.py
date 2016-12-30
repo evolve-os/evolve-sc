@@ -260,10 +260,12 @@ class BasketView(Gtk.Revealer):
 
                     cd = self.current_dl_package
                     if cd == 0 and self.total_packages == 0:
-                        self.set_progress(prog, "Downloading {} ({})".format(
-                            package, speed))
+                        # "Downloading eopkg-index.xml.xz (10kb/s)
+                        st = _("Downloading {} ({})")
+                        self.set_progress(prog, st.format(package, speed))
                     else:
-                        disp = "Downloading {} of {}: {} ({})"
+                        # "Downloading 1 of 10: bash (10kb/s)
+                        disp = _("Downloading {} of {}: {} ({})")
                         self.set_progress(prog, disp.format(
                             self.current_dl_package,
                             self.total_packages, package, speed))
@@ -272,7 +274,8 @@ class BasketView(Gtk.Revealer):
                         self.current_dl_package += 1
                 else:
                     # print args
-                    self.set_progress(1.0, "Downloading %s" % args[1])
+                    # Downloading eopkg-index.xml.sha1sum
+                    self.set_progress(1.0, _("Downloading {}").format(args[1]))
         elif signal == 'finished' or signal is None:
             if self.cb is not None:
                 self.cb()
