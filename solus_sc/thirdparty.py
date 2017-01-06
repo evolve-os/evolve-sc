@@ -78,6 +78,10 @@ APPS = {
         ('Opera', 'opera-browser',
          'Opera Web Browser',
          'network/web/browser/opera-stable/pspec.xml'),
+    'phpstorm':
+        ('PHPStorm', 'phpstorm',
+         'PHPStorm - an IDE for the PHP Language',
+         'programming/phpstorm/pspec.xml'),
     'plexmediaserver':
         ('Plex Media Server', 'plex',
          'Plex Media Server',
