@@ -63,6 +63,8 @@ APPS = {
         "network/web/browser/opera-stable/pspec.xml",
     "google-talkplugin":
         "network/im/google-talkplugin/pspec.xml",
+    "phpstorm":
+        "programming/phpstorm/pspec.xml",
     "plexmediaserver":
         "multimedia/video/plexmediaserver/pspec.xml",
     "pycharm":
