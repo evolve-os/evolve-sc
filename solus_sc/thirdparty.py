@@ -115,7 +115,7 @@ APPS = {
          'network/im/viber/pspec.xml'),
     'webstorm':
         ('Webstorm', 'webstorm',
-         'Webstorm - an IDE for the Javascript language',
+         'WebStorm - an IDE for the Web',
          'programming/webstorm/pspec.xml'),
     'wps-office':
         ('WPS Office Suite', 'wps-office-wpsmain',
