@@ -79,6 +79,8 @@ APPS = {
         "network/im/teamspeak/pspec.xml",
     "viber":
         "network/im/viber/pspec.xml",
+    "webstorm":
+        "programming/webstorm/pspec.xml",
     "wps-office":
         "office/wps-office/pspec.xml",
 }
