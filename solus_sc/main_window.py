@@ -20,7 +20,7 @@ from .basket import BasketView
 from .search import ScSearchView
 from .thirdparty import ThirdPartyView
 from .settings_view import ScSettingsView
-from gi.repository import Gtk, GLib, Gio
+from gi.repository import Gtk, GLib, Gio, Keybinder
 import sys
 import threading
 
@@ -57,6 +57,12 @@ class ScMainWindow(Gtk.ApplicationWindow):
     # Default open mode
     mode_open = None
     action_bar = None
+
+    def goto_search_on_key(self,key=None,data=None): # key=None and data=None to make this function happy.
+        """ Go to search view """
+        nom = self.stack.get_visible_child_name()
+        if nom != "search":
+           self.stack.set_visible_child_name("search")
 
     def show_updates(self):
         """ Switch to updates view """
@@ -145,6 +151,12 @@ class ScMainWindow(Gtk.ApplicationWindow):
         self.stack = Gtk.Stack()
         self.stack.get_style_context().add_class("main-view")
         self.set_can_back(False)
+
+        # When CtrlL+F is pressed calls search view
+        keySearch = "<Ctrl>F"
+        Keybinder.init()
+        Keybinder.bind(keySearch,self.goto_search_on_key,None)
+
         # We'll add view switching later
         try:
             self.init_first()
