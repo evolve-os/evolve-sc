@@ -17,7 +17,7 @@ from gi.repository import AppStreamGlib as As
 from .util import sc_format_size_local
 
 
-class PackageDetailsView(Gtk.VBox):
+class PackageDetailsView(Gtk.Box):
     """ Show all the details of a given package to the user as well
         as supplying them with manipulation functions, i.e. for removal, etc
     """
@@ -108,14 +108,14 @@ class PackageDetailsView(Gtk.VBox):
                 self.update_from_package(pkg)
 
     def __init__(self, appsystem, basket):
-        Gtk.VBox.__init__(self)
+        Gtk.Box.__init__(self, Gtk.Orientation.VERTICAL)
         self.appsystem = appsystem
         self.basket = basket
         self.basket.connect("basket-changed", self.on_basket_changed)
 
         self.set_border_width(24)
 
-        header = Gtk.HBox(0)
+        header = Gtk.Box(Gtk.Orientation.HORIZONTAL, 0)
         self.pack_start(header, False, False, 0)
 
         # Set up the icon
@@ -135,7 +135,7 @@ class PackageDetailsView(Gtk.VBox):
         self.label_name.set_margin_top(6)
 
         # Set up the action line
-        action_line = Gtk.HBox(0)
+        action_line = Gtk.Box(Gtk.Orientation.HORIZONTAL, 0)
         action_line.set_valign(Gtk.Align.CENTER)
         action_line.set_halign(Gtk.Align.END)
         header.pack_end(action_line, False, False, 0)

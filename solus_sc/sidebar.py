@@ -72,7 +72,7 @@ class ScSidebar(Gtk.ListBox):
 
         sel = None
         for item, label_sz, icon_sz in items:
-            row = Gtk.HBox(0)
+            row = Gtk.Box(Gtk.Orientation.HORIZONTAL, 0)
             label = Gtk.Label(label_sz)
 
             image = Gtk.Image.new_from_icon_name(icon_sz,

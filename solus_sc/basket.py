@@ -342,7 +342,7 @@ class BasketView(Gtk.Revealer):
 
         lab = Gtk.Label(markup)
         lab.set_use_markup(True)
-        box = Gtk.HBox(0)
+        box = Gtk.Box(Gtk.Orientation.HORIZONTAL, 0)
         box.set_property("margin", 5)
         box.pack_start(lab, True, True, 0)
         dlg.get_content_area().pack_start(box, False, False, 0)

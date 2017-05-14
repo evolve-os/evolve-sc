@@ -52,10 +52,10 @@ class ScGroupButton(Gtk.Button):
         image.set_halign(Gtk.Align.START)
         image.set_pixel_size(64)
 
-        label_box = Gtk.VBox(0)
+        label_box = Gtk.Box(Gtk.Orientation.VERTICAL, 0)
         label_box.set_valign(Gtk.Align.CENTER)
 
-        box = Gtk.HBox(0)
+        box = Gtk.Box(Gtk.Orientation.HORIZONTAL, 0)
         box.pack_start(image, False, False, 0)
         image.set_property("margin-right", 10)
         label = Gtk.Label(gDesc)

@@ -28,7 +28,7 @@ def do_justif(label):
     label.set_justify(Gtk.Justification.LEFT)
 
 
-class PackageLabel(Gtk.VBox):
+class PackageLabel(Gtk.Box):
 
     __gsignals__ = {
         'operation-selected': (GObject.SIGNAL_RUN_FIRST, None,
@@ -40,10 +40,10 @@ class PackageLabel(Gtk.VBox):
         return ret
 
     def __init__(self, pkg, old_pkg, interactive=False):
-        Gtk.VBox.__init__(self)
+        Gtk.Box.__init__(self, Gtk.Orientation.VERTICAL)
 
         self.set_border_width(4)
-        self.header = Gtk.HBox()
+        self.header = Gtk.Box(Gtk.Orientation.HORIZONTAL)
         self.image = Gtk.Image()
         if pkg.icon is not None:
             self.image.set_from_icon_name(pkg.icon, Gtk.IconSize.DIALOG)

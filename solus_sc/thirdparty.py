@@ -120,7 +120,7 @@ APPS = {
 }
 
 
-class ThirdPartyView(Gtk.VBox):
+class ThirdPartyView(Gtk.Box):
     """ Work around insane distribution policy to help the user. """
 
     listbox = None
@@ -133,7 +133,7 @@ class ThirdPartyView(Gtk.VBox):
         self.listbox.set_sensitive(sensitive)
 
     def __init__(self, owner):
-        Gtk.VBox.__init__(self)
+        Gtk.Box.__init__(self, Gtk.Orientation.VERTICAL)
         self.basket = owner.basket
         self.basket.connect("basket-changed", self.on_basket_changed)
 
@@ -167,7 +167,7 @@ class ThirdPartyView(Gtk.VBox):
         for key in sorted(APPS):
             row = APPS[key]
 
-            hbox = Gtk.HBox(0)
+            hbox = Gtk.Box(Gtk.Orientation.HORIZONTAL, 0)
             img = Gtk.Image.new_from_icon_name(row[1], Gtk.IconSize.DIALOG)
             hbox.pack_start(img, False, False, 0)
             img.set_property("margin", 6)
