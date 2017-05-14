@@ -330,6 +330,12 @@ class ScUpdatesView(Gtk.VBox):
     updating_page = None
     is_updating = False
 
+    def select_all_upgrades(self, btn):
+        model = self.tview.get_model()
+        state = not model[1][0]
+        model[1][0] = state
+        model[2][0] = state
+
     def perform_refresh(self, btn, wdata=None):
         self.perform_refresh_internal()
 
@@ -476,6 +482,13 @@ class ScUpdatesView(Gtk.VBox):
         sep.set_draw(False)
         sep.set_expand(True)
         self.toolbar.add(sep)
+
+        select_all = Gtk.ToolButton(None, None)
+        select_all.set_icon_name("checkbox-checked-symbolic")
+        select_all.set_label("Select all updates")
+        select_all.set_tooltip_text("Select all updates")
+        select_all.connect("clicked", self.select_all_upgrades)
+        self.toolbar.add(select_all)
 
         refresh_button = Gtk.ToolButton(None, None)
         refresh_button.set_icon_name("view-refresh-symbolic")
