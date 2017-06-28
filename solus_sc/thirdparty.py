@@ -47,7 +47,7 @@ APPS = {
          'Developer channel for the web browser from Google',
          'network/web/browser/google-chrome-unstable/pspec.xml'),
     'google-earth':
-        ('Google Earth', 'earth',
+        ('Google Earth', 'google-earth',
          '3D interface for satellite imagery from Google',
          'network/web/google-earth/pspec.xml'),
     'google-talkplugin':
@@ -55,7 +55,7 @@ APPS = {
          'The Google Talk plugin for hangouts video and audio',
          'network/im/google-talkplugin/pspec.xml'),
     'gitkraken':
-        ('GitKraken', 'web-github',
+        ('GitKraken', 'gitkraken',
          'The downright luxurious Git client, for Windows, Mac and Linux',
          'programming/gitkraken/pspec.xml'),
     'idea':
@@ -92,7 +92,7 @@ APPS = {
          '</i>',
          'network/im/skype/pspec.xml'),
     'slack-desktop':
-        ('Slack', 'web-slack',
+        ('Slack', 'slack',
          'Team communication for the 21st century.',
          'network/im/slack-desktop/pspec.xml'),
     'spotify':
