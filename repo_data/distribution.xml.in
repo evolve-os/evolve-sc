@@ -202,5 +202,8 @@
         <!-- Stray //-->
         <Package>gnonlin</Package>
 
+        <!-- We don't have 32bit maven, this guy got left behind somewhere along the way //-->
+        <Package>apache-maven-32bit-dbginfo</Package>
+
 	</Obsoletes>
 </PISI>
