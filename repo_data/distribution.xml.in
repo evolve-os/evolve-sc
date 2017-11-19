@@ -202,5 +202,8 @@
         <!-- Stray //-->
         <Package>gnonlin</Package>
 
+        <!-- Debug has to be disabled for this package //-->
+        <Package>streamlink-twitch-gui-dbginfo</Package>
+
 	</Obsoletes>
 </PISI>
