@@ -3,6 +3,7 @@
 # This file is distributed under the same license as the PACKAGE package.
 # 
 # Translators:
+# Vedat Demir <vsahbaz@gmail.com>, 2017
 # Demiray Muhterem <mdemiray@msn.com>, 2017
 # Egemen Metin Turan <emturan@gmail.com>, 2017
 # Muha Aliss <muhaaliss@gmail.com>, 2017
@@ -14,8 +15,8 @@ msgstr ""
 "Project-Id-Version: solus-sc\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2017-05-27 09:58+0100\n"
-"PO-Revision-Date: 2017-09-23 06:30+0000\n"
-"Last-Translator: Egemen Metin Turan <emturan@gmail.com>\n"
+"PO-Revision-Date: 2017-12-23 06:30+0000\n"
+"Last-Translator: Vedat Demir <vsahbaz@gmail.com>\n"
 "Language-Team: Turkish (http://www.transifex.com/solus-project/solus-sc/language/tr/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -41,7 +42,7 @@ msgstr "Önyükleme araçları"
 
 #: ../repo_data/components.xml.in.h:5
 msgid "Tools and daemons required early in the boot process"
-msgstr "Önyükleme işleminden önce araçlar ve arkaplan hizmetleri gerekli"
+msgstr "Önyükleme işleminin başlarında yüklenmesi gereken araçlar ve arkaplan hizmetleri"
 
 #: ../repo_data/components.xml.in.h:6
 msgid "System utilities"
@@ -49,7 +50,7 @@ msgstr "Sistem araçları"
 
 #: ../repo_data/components.xml.in.h:7
 msgid ""
-"Commonly used components for a full installation, not used in minimal "
+"Commonly used components for a full installation, not used in minimal " 
 "environments"
 msgstr "Minimum ortamlarda kullanılmayan tam kurulum için yaygın kullanılan bileşenler"
 
@@ -67,7 +68,7 @@ msgstr "X.org Taban Bileşenleri"
 
 #: ../repo_data/components.xml.in.h:11
 msgid "Base components required for the X.Org System"
-msgstr "X.org sistemi için gerekli temel bileşenler"
+msgstr "X.Org sistemi için gerekli temel bileşenler"
 
 #: ../repo_data/components.xml.in.h:12
 msgid "X.Org Protocol Headers"
@@ -75,59 +76,59 @@ msgstr "X.org Protokol Başlıklar"
 
 #: ../repo_data/components.xml.in.h:13
 msgid "Protocol headers required for building X.Org Libraries"
-msgstr "X.Org Kütüphaneleri oluşturmak için gereken protokol üstbilgileri"
+msgstr "X.Org Kitaplıklarını oluşturmak için gereken protokol başlıkları. "
 
 #: ../repo_data/components.xml.in.h:14
 msgid "X.Org Core Libraries"
-msgstr "X.Org Çekirdek Kütüphaneleri"
+msgstr "X.Org Ana Kütüphaneleri"
 
 #: ../repo_data/components.xml.in.h:15
 msgid "Core libraries required by X.Org"
-msgstr "X.Org tarafından ihtiyaç duyulan çekirdek kütüphaneleri"
+msgstr "X.Org tarafından ihtiyaç duyulan temel kitaplıklar"
 
 #: ../repo_data/components.xml.in.h:16
 msgid "X.Org Core Fonts"
-msgstr "X.Org Çekirdek Yazı Tipleri"
+msgstr "X.Org Temel Yazı Tipleri"
 
 #: ../repo_data/components.xml.in.h:17
 msgid "Core fonts required by X.Org"
-msgstr "X.Org tarafından gerekli olan ana yazı tipleri"
+msgstr "X.Org tarafından ihtiyaç duyulan temel yazı tipleri"
 
 #: ../repo_data/components.xml.in.h:18
 msgid "X.Org Core Applications"
-msgstr "X.Org Ana Uygulamaları"
+msgstr "X.Org Temel Uygulamaları"
 
 #: ../repo_data/components.xml.in.h:19
 msgid "Collection of simple applications for X.Org"
-msgstr "X.Org için basit uygulamaların toplanması"
+msgstr "X.Org için temel uygulamaların toplanması"
 
 #: ../repo_data/components.xml.in.h:20
 msgid "X.Org Display"
-msgstr "X.Org Ekran"
+msgstr "X.Org Ekranı"
 
 #: ../repo_data/components.xml.in.h:21
 msgid "Software required to run an X.Org Display"
-msgstr "X.Org, ekranını çalıştırmak için gereken yazılım"
+msgstr "X.Org ekranını çalıştırmak için gereken yazılım"
 
 #: ../repo_data/components.xml.in.h:22
 msgid "X.Org Server"
-msgstr "X.Org Sunucu"
+msgstr "X.Org Sunucusu"
 
 #: ../repo_data/components.xml.in.h:23
 msgid "Core server of the X Window System"
-msgstr "X pencere sisteminin çekirdek sunucusu"
+msgstr "X Pencere Sisteminin temel sunucusu"
 
 #: ../repo_data/components.xml.in.h:24
 msgid "X.Org Drivers"
-msgstr "X.Org Sürücüler"
+msgstr "X.Org Sürücüleri"
 
 #: ../repo_data/components.xml.in.h:25
 msgid "Drivers required to use the X Window System"
-msgstr "X pencere sistemini kullanmak için gereken sürücüler"
+msgstr "X Pencere Sistemini kullanmak için gereken sürücüler"
 
 #: ../repo_data/components.xml.in.h:26
 msgid "Networking Base"
-msgstr "Ağ Yönetimi"
+msgstr "Ağ Tabanı"
 
 #: ../repo_data/components.xml.in.h:27
 msgid "Email clients"
@@ -155,7 +156,7 @@ msgstr "Web uygulamaları"
 
 #: ../repo_data/components.xml.in.h:33
 msgid "Web browsers"
-msgstr "İnternet tarayıcıları"
+msgstr "Ağ tarayıcıları"
 
 #: ../repo_data/components.xml.in.h:34
 msgid "Networking utilities"
@@ -163,7 +164,7 @@ msgstr "Ağ araçları"
 
 #: ../repo_data/components.xml.in.h:35
 msgid "Download managers"
-msgstr "Indirme yöneticileri"
+msgstr "İndirme yöneticileri"
 
 #: ../repo_data/components.xml.in.h:36
 msgid "Networking CLI Clients"
@@ -171,19 +172,19 @@ msgstr "Ağ İstemcileri"
 
 #: ../repo_data/components.xml.in.h:37
 msgid "Kernel Images"
-msgstr "Çekirdek İmajları"
+msgstr "Kernel İmajları"
 
 #: ../repo_data/components.xml.in.h:38
 msgid "Kernel Development"
-msgstr "Çekirdek Geliştirme"
+msgstr "Kernel Geliştirme"
 
 #: ../repo_data/components.xml.in.h:39
 msgid "Text Editors"
-msgstr "Metin Editörleri"
+msgstr "Metin Yayımcıları"
 
 #: ../repo_data/components.xml.in.h:40
 msgid "Simple and advanced text editors"
-msgstr "Basit ve gelişmiş metin editörleri"
+msgstr "Basit ve gelişmiş metin Yayımcıları"
 
 #: ../repo_data/components.xml.in.h:41 ../repo_data/groups.xml.in.h:5
 msgid "Office Software"
@@ -191,11 +192,11 @@ msgstr "Ofis Yazılımı"
 
 #: ../repo_data/components.xml.in.h:42
 msgid "Office software"
-msgstr "Ofis yazılımı"
+msgstr "Belge yazılımı"
 
 #: ../repo_data/components.xml.in.h:43
 msgid "Financial Software"
-msgstr "Finansal Yazılım"
+msgstr "Mâli Yazılım"
 
 #: ../repo_data/components.xml.in.h:44
 msgid "Mathematics-Oriented Software"
@@ -211,7 +212,7 @@ msgstr "Bilimsel Yazılım"
 
 #: ../repo_data/components.xml.in.h:47
 msgid "Software aimed at various scientific fields."
-msgstr "Çeşitli bilim dallarına yönelik yazılım."
+msgstr "Çeşitli bilim alanlarına yönelik yazılımlar."
 
 #: ../repo_data/components.xml.in.h:48
 msgid "E-book and PDF Viewing Software"
@@ -223,7 +224,7 @@ msgstr "Programlama"
 
 #: ../repo_data/components.xml.in.h:50
 msgid "Software related to programming"
-msgstr "Programlama ile ilgili yazılımlar"
+msgstr "Programlamaya ilişkin yazılımlar"
 
 #: ../repo_data/components.xml.in.h:51
 msgid "Development files"
@@ -231,7 +232,7 @@ msgstr "Geliştirme dosyaları"
 
 #: ../repo_data/components.xml.in.h:52
 msgid "Integrated Developer Environments"
-msgstr "Entegre Geliştirici Ortamları"
+msgstr "Bütünleşik Geliştirici Ortamları"
 
 #: ../repo_data/components.xml.in.h:53
 msgid "Development tools"
@@ -239,7 +240,7 @@ msgstr "Geliştirme araçları"
 
 #: ../repo_data/components.xml.in.h:54
 msgid "Haskell libraries"
-msgstr "Haskell kütüphaneleri"
+msgstr "Haskell kitaplıkları"
 
 #: ../repo_data/components.xml.in.h:55
 msgid "Python modules"
@@ -251,15 +252,15 @@ msgstr "Perl modülleri"
 
 #: ../repo_data/components.xml.in.h:57
 msgid "Java modules and libraries"
-msgstr "Java modül ve kütüphaneleri"
+msgstr "Java modülleri ve kitaplıkları"
 
 #: ../repo_data/components.xml.in.h:58
 msgid "Programming libraries"
-msgstr "Programlama kütüphaneleri"
+msgstr "Programlama kitaplıkları"
 
 #: ../repo_data/components.xml.in.h:59
 msgid "Database clients and servers"
-msgstr "Veritabanı istemci ve sunucuları"
+msgstr "Veritabanı istemcileri ve sunucuları"
 
 #: ../repo_data/components.xml.in.h:60
 msgid "Desktop Software"
@@ -267,27 +268,27 @@ msgstr "Masaüstü Yazılımı"
 
 #: ../repo_data/components.xml.in.h:61
 msgid "Desktop specific software"
-msgstr "Masaüstüne özgü yazılım"
+msgstr "Masaüstüne özel yazılım"
 
 #: ../repo_data/components.xml.in.h:62
 msgid "General Multimedia Software"
-msgstr "Genel Çoklu ortam Yazılımı"
+msgstr "Genel Multimedya Yazılımı"
 
 #: ../repo_data/components.xml.in.h:63
 msgid "Graphics"
-msgstr "Grafikler"
+msgstr "Grafik"
 
 #: ../repo_data/components.xml.in.h:64
 msgid "Graphics Manipulation Software"
-msgstr "Grafik İşleme Yazılımı"
+msgstr "Grafik İşlem Yazılımı"
 
 #: ../repo_data/components.xml.in.h:65
 msgid "Multimedia Codecs"
-msgstr "Çoklu ortam Codecleri"
+msgstr "Multimedya Kod Çözücüleri"
 
 #: ../repo_data/components.xml.in.h:66
 msgid "Multimedia Codecs and Format Support"
-msgstr "Çoklu ortam Codecleri ve Biçim Desteği"
+msgstr "Multimedya Kod Çözücüleri ve Biçim Desteği"
 
 #: ../repo_data/components.xml.in.h:67
 msgid "Video Software"
@@ -295,31 +296,31 @@ msgstr "Video Yazılımı"
 
 #: ../repo_data/components.xml.in.h:68
 msgid "Audio Software"
-msgstr "Ses Yazılımı"
+msgstr "İşitsel Yazılımı"
 
 #: ../repo_data/components.xml.in.h:69
 msgid "Multimedia Libraries"
-msgstr "Çoklu ortam Kütüphaneleri"
+msgstr "Multimedya Kitaplıkları"
 
 #: ../repo_data/components.xml.in.h:70
 msgid "GStreamer Runtime"
-msgstr "GStreamer Çalıştırma zamanı"
+msgstr "GStreamer Çalışma Zamanı"
 
 #: ../repo_data/components.xml.in.h:71
 msgid "GStreamer Runtime &amp; Support Libraries"
-msgstr "GStreamer Çalıştırma zamanı  &amp; Destek Kütüphaneleri"
+msgstr "GStreamer Çalışma Zamanı  &amp; Destek Kitaplıkları"
 
 #: ../repo_data/components.xml.in.h:72
 msgid "Desktop Libraries"
-msgstr "Masaüstü Kütüphaneleri"
+msgstr "Masaüstü Kitaplıkları"
 
 #: ../repo_data/components.xml.in.h:73
 msgid "Common libraries required for a desktop"
-msgstr "Bir masaüstü için gerekli ortak kütüphaneler"
+msgstr "Bir masaüstü için gerekli olan ortak kitaplıklar"
 
 #: ../repo_data/components.xml.in.h:74
 msgid "Desktop Theming"
-msgstr "Masaüstü Temaları"
+msgstr "Masaüstü Teması"
 
 #: ../repo_data/components.xml.in.h:75
 msgid "Themes to enhance the desktop"
@@ -327,7 +328,7 @@ msgstr "Masaüstünü zenginleştirmek için temalar"
 
 #: ../repo_data/components.xml.in.h:76
 msgid "Desktop Fonts"
-msgstr "Masaüstü Yazı tipleri"
+msgstr "Masaüstü Yazı Tipleri"
 
 #: ../repo_data/components.xml.in.h:77
 msgid "Fonts to enhance the desktop"
@@ -335,11 +336,11 @@ msgstr "Masaüstünü zenginleştirmek için yazı tipleri"
 
 #: ../repo_data/components.xml.in.h:78
 msgid "Qt Runtime Libraries"
-msgstr "Qt Çalışma zamanı Kütüphaneleri"
+msgstr "Qt Çalışma Zamanı Kitaplıklari"
 
 #: ../repo_data/components.xml.in.h:79
 msgid "GTK Runtime Libraries"
-msgstr "GTK Çalışma zamanı Kütüphaneleri"
+msgstr "GTK Çalışma Zamanı Kitaplıklari"
 
 #: ../repo_data/components.xml.in.h:80
 msgid "Budgie Desktop"
@@ -347,7 +348,7 @@ msgstr "Budgie Masaüstü"
 
 #: ../repo_data/components.xml.in.h:81
 msgid "Elements of the Solus Budgie Experience"
-msgstr "Solus Budgie Deneyimleme Elemanları"
+msgstr "Solus Budgie Deneyiminin Unsurları"
 
 #: ../repo_data/components.xml.in.h:82
 msgid "GNOME Desktop"
@@ -363,7 +364,7 @@ msgstr "i3 Masaüstü"
 
 #: ../repo_data/components.xml.in.h:85
 msgid "GNOME Desktop - Core System"
-msgstr "GNOME Masaüstü - Ana Sistem"
+msgstr "GNOME Masaüstü - Temel Sistem"
 
 #: ../repo_data/components.xml.in.h:86
 msgid "GNOME Documentation Tools"
@@ -371,7 +372,7 @@ msgstr "GNOME Belgeleme Araçları"
 
 #: ../repo_data/components.xml.in.h:87
 msgid "Documentation tools for GNOME"
-msgstr "GNOME için belgelendirme araçları"
+msgstr "GNOME için belge araçları"
 
 #: ../repo_data/components.xml.in.h:88
 msgid "KDE Desktop"
@@ -379,11 +380,11 @@ msgstr "KDE Masaüstü"
 
 #: ../repo_data/components.xml.in.h:89
 msgid "KDE Desktop - Core System"
-msgstr "KDE Masaüstü - Çekirdek Sistem"
+msgstr "KDE Masaüstü - Temel Sistem"
 
 #: ../repo_data/components.xml.in.h:90
 msgid "Desktop Core Components"
-msgstr "Masaüstü Ana Bileşenleri"
+msgstr "Masaüstü Temel Bileşenleri"
 
 #: ../repo_data/components.xml.in.h:91
 msgid "Core components for desktop systems"
@@ -399,19 +400,19 @@ msgstr "Şifreleme araçları"
 
 #: ../repo_data/components.xml.in.h:94
 msgid "Cryptographic utilities and runtimes"
-msgstr "Şifreleme araçları ve çalışma zamanları"
+msgstr "Kriptografik yardımcı programlar ve çalışma zamanları"
 
 #: ../repo_data/components.xml.in.h:95
 msgid "Security-oriented libraries"
-msgstr "Güvenlik odaklı kütüphaneler"
+msgstr "Güvenlik odaklı kitaplıklar"
 
 #: ../repo_data/components.xml.in.h:96
 msgid "Main games collection"
-msgstr "Ana oyun koleksiyonu"
+msgstr "Asıl oyunlar koleksiyonu"
 
 #: ../repo_data/components.xml.in.h:97
 msgid "Main games"
-msgstr "Ana oyunlar"
+msgstr "Asıl oyunlar"
 
 #: ../repo_data/components.xml.in.h:98
 msgid "Action Games"
@@ -419,7 +420,7 @@ msgstr "Aksiyon Oyunları"
 
 #: ../repo_data/components.xml.in.h:99
 msgid "Arcade Games"
-msgstr "Arcade -Atari Salonu- Oyunları"
+msgstr "Eğlence Salonu Oyunları"
 
 #: ../repo_data/components.xml.in.h:100
 msgid "Card Games"
@@ -427,11 +428,11 @@ msgstr "Kart Oyunları"
 
 #: ../repo_data/components.xml.in.h:101
 msgid "Console Emulators"
-msgstr "Konsol Öykünücüleri"
+msgstr "Konsol Tıpkı Benzetimcileri"
 
 #: ../repo_data/components.xml.in.h:102
 msgid "Massive Multiplayer Online Games"
-msgstr "Çok Oyunculu Çevrimiçi Oyunlar"
+msgstr "Muazzam Oyunculu Çevrimiçi Oyunlar"
 
 #: ../repo_data/components.xml.in.h:103
 msgid "Platformer Games"
@@ -447,11 +448,11 @@ msgstr "Rol yapma Oyunları"
 
 #: ../repo_data/components.xml.in.h:106
 msgid "Strategy Games"
-msgstr "Taktik Oyunları"
+msgstr "Strateji Oyunları"
 
 #: ../repo_data/distribution.xml.in.h:1
 msgid "Solus Repository"
-msgstr "Solus Deposu"
+msgstr "Solus Paket Havuzu"
 
 #: ../repo_data/groups.xml.in.h:1
 msgid "System Software"
@@ -463,111 +464,111 @@ msgstr "İnternet Yazılımları"
 
 #: ../repo_data/groups.xml.in.h:3
 msgid "Multimedia &amp; Graphics"
-msgstr "Çoklu Ortam &amp; Grafik"
+msgstr "Multimedya &amp; Grafik"
 
 #: ../repo_data/groups.xml.in.h:4
 msgid "Gaming on Solus"
-msgstr "Solus Oyunları"
+msgstr "Solus'ta Oyun"
 
 #: ../repo_data/groups.xml.in.h:6
 msgid "Programming Languages &amp; Tools"
-msgstr "Programlama Dilleri &amp; Araçlar"
+msgstr "Programlama Dilleri &amp; Araçları"
 
 #: ../repo_data/groups.xml.in.h:7
 msgid "Desktop Software &amp; Theming"
-msgstr "Masaüstü Yazılımları &amp; Temalar"
+msgstr "Masaüstü Yazılımları &amp; Temaları"
 
 #: ../repo_data/groups.xml.in.h:8
 msgid "Security Software"
-msgstr "Güvenlik Yazılımları"
+msgstr "Güvenlik Yazılımı"
 
 #: ../solus_sc/application.py:84
 msgid "Open up the updates view of the application"
-msgstr "Uygulamanın güncelleme sayfasını açın."
+msgstr "Uygulamanın güncellemeler tablosunu açın."
 
 #. Quirky loading message
 #: ../solus_sc/available_view.py:24
 msgid "Switching to the B-side of the cassette…"
-msgstr "Kasetin B-yüzüne geçiliyor..."
+msgstr "Kasetin B tarafına geçiliyor..."
 
 #. The number (more than one) of package operations to be performed
 #: ../solus_sc/basket.py:149
 msgid "{} operations pending"
-msgstr "{} işlem beklemede"
+msgstr "{} bekleyen işlemler"
 
 #: ../solus_sc/basket.py:153
 msgid " - This may take <b>some time!</b>"
-msgstr "- Bu işlem <b>biraz zaman</b> alabilir!"
+msgstr "- Bu <b>biraz zaman alabilir!</b>"
 
 #. Only one package operation to be performed
 #: ../solus_sc/basket.py:158
 msgid "One operation pending"
-msgstr "Bir işlem beklemede."
+msgstr "Bekleyen bir işlem."
 
 #. "Updating Solus repository" (named repo)
 #: ../solus_sc/basket.py:203
 #, python-format
 msgid "Updating %s repository"
-msgstr "%s deposu güncelleniyor."
+msgstr "%s paket havuzu güncelleniyor."
 
 #. "Extracting 1 of 10: bash"
 #: ../solus_sc/basket.py:207
 msgid "Extracting {} of {}: {}"
-msgstr "{}: {}'dan {} çıkartılıyor."
+msgstr "{} :{} / {} ayıklanıyor."
 
 #. "Configuring 1 of 10: bash"
 #: ../solus_sc/basket.py:213
 msgid "Configuring {} of {}: {}"
-msgstr "{}: {} dan {} ayarlanıyor"
+msgstr "{} :{} / {} yapılandırılıyor"
 
 #. "Installing 1 of 10: bash"
 #: ../solus_sc/basket.py:219
 msgid "Installing {} of {}: {}"
-msgstr "{}: {} dan {} kuruluyor"
+msgstr "{} :{} / {} kuruluyor"
 
 #. "Removing (1 of 10): bash"
 #: ../solus_sc/basket.py:222
 msgid "Removing {} of {}: {}"
-msgstr "{}: {} dan {} kaldırılıyor"
+msgstr "{} :{} / {} kaldırılıyor"
 
 #. "Upgraded 1 of 10: bash"
 #: ../solus_sc/basket.py:231
 msgid "Upgraded {} of {}: {}"
-msgstr "{}: {} dan {} güncelleniyor"
+msgstr "{} :{} / {} yükseltildi"
 
 #. "Removed 1 of 10: bash"
 #. "Installed 1 of 10: bash"
 #: ../solus_sc/basket.py:234 ../solus_sc/basket.py:237
 msgid "Removed {} of {}: {}"
-msgstr "{}: {} dan {} kaldırıldı"
+msgstr "{} :{} / {} kaldırıldı"
 
 #. "Downloading eopkg-index.xml.xz (10kb/s)
 #: ../solus_sc/basket.py:264
 msgid "Downloading {} ({})"
-msgstr "İndiriliyor {} ({})"
+msgstr "{} ({}) indiriliyor"
 
 #. "Downloading 1 of 10: bash (10kb/s)
 #: ../solus_sc/basket.py:268
 msgid "Downloading {} of {}: {} ({})"
-msgstr "{} İndiriliyor {}: {} ({})"
+msgstr "{} / {} indiriliyor: {} ({})"
 
 #. print args
 #. Downloading eopkg-index.xml.sha1sum
 #: ../solus_sc/basket.py:278
 msgid "Downloading {}"
-msgstr "İndiriliyor {}"
+msgstr "{} indiriliyor"
 
 #: ../solus_sc/basket.py:323
 msgid "The following dependencies need to be installed to continue"
-msgstr "Devam etmek için belirtilen bağımlılık dosyalarının yüklenmesi gerekiyor."
+msgstr "Devam etmek için aşağıdaki bağımlılıkların kurulması gerekiyor."
 
 #: ../solus_sc/basket.py:333
 msgid "Installation confirmation"
-msgstr "Yükleme onayı."
+msgstr "Kurulum onayı"
 
 #: ../solus_sc/basket.py:336
 msgid "The following dependencies need to be removed to continue"
-msgstr "Devam etmek için belirtilen bağımlılık dosyalarının kaldırılması gerekiyor."
+msgstr "Devam etmek için belirtilen aşağıdaki bağımlılıkların  kaldırılması gerekiyor."
 
 #: ../solus_sc/basket.py:337
 msgid "Removal confirmation"
@@ -575,7 +576,7 @@ msgstr "Kaldırma onayı"
 
 #: ../solus_sc/basket.py:340
 msgid "The following dependencies need to be updated to continue"
-msgstr "Devam etmek için belirtilen bağımlılık dosyalarının güncellenmesi gerekiyor"
+msgstr "Devam etmek için belirtilen aşağıdaki bağımlılıkların güncellenmesi gerekiyor"
 
 #: ../solus_sc/basket.py:341
 msgid "Update confirmation"
@@ -614,11 +615,11 @@ msgstr "Sorunları bildir"
 
 #: ../solus_sc/details.py:217
 msgid "Visit Website"
-msgstr "Websitesine Uğra"
+msgstr "Siteyi ziyaret et"
 
 #: ../solus_sc/details.py:314 ../solus_sc/updates_view.py:296
 msgid "Details"
-msgstr "Detaylar"
+msgstr "Ayrıntılar"
 
 #: ../solus_sc/details.py:382
 msgid "Developers"
@@ -631,7 +632,7 @@ msgstr "Sürüm"
 #. Size of the package when installed locally
 #: ../solus_sc/details.py:409
 msgid "Installed size"
-msgstr "Yüklenmiş boyut"
+msgstr "Yüklü boyut"
 
 #. Donation button launches website to donate to authors
 #: ../solus_sc/details.py:421
@@ -640,7 +641,7 @@ msgstr "Bağış yap"
 
 #: ../solus_sc/details.py:435
 msgid "Changelog"
-msgstr "Değişik günlüğü"
+msgstr "Değişiklikler"
 
 #: ../solus_sc/details.py:443
 msgid "License"
@@ -648,17 +649,17 @@ msgstr "Lisans"
 
 #: ../solus_sc/details.py:448
 msgid "Report an invalid or missing license"
-msgstr "Geçersiz veya eksik lisansı bildir"
+msgstr "Geçersiz veya eksik bir lisans bildirin"
 
 #: ../solus_sc/details.py:450
 msgid ""
 "This selection is available in accordance with the terms set in the "
 "following license(s):"
-msgstr "Bu seçim, aşağıdaki lisans(ların) şartlarına uygun olarak mevcuttur:"
+msgstr "Bu seçim, aşağıdaki lisans(lar)daki koşullara uygun olarak mevcuttur:"
 
 #: ../solus_sc/details.py:518
 msgid "Cannot remove core system software"
-msgstr "Temel sistem programı kaldırılamaz"
+msgstr "Temel sistem yazılımı kaldırılamaz"
 
 #. "5 categories" - the number of categories within each group
 #: ../solus_sc/groups.py:72
@@ -692,7 +693,7 @@ msgstr "Yüklendi"
 #. Software made available from outside the Solus software repos
 #: ../solus_sc/main_window.py:220 ../solus_sc/sidebar.py:68
 msgid "Third Party"
-msgstr "Üçüncü Parti"
+msgstr "Üçüncü Taraf"
 
 #. The search page
 #: ../solus_sc/main_window.py:225 ../solus_sc/sidebar.py:69
@@ -706,13 +707,13 @@ msgstr "Ayarlar"
 
 #: ../solus_sc/installed_view.py:30
 msgid "Solving the Paradox Of Choice"
-msgstr "Seçim paradoksu çözülüyor"
+msgstr "Seçimin karmaşası çözülüyor"
 
 #. self.spinner.start()
 #. "Witty" loading page, loading search results
 #: ../solus_sc/search_results.py:65
 msgid "Concentrating really hard"
-msgstr "Çok fazla yoğunlaşıyor"
+msgstr "Konsantrasyon gerçekten zor"
 
 #: ../solus_sc/search_results.py:62
 msgid "Type a query to get started"
@@ -768,15 +769,15 @@ msgstr "Yüklü değil"
 
 #: ../solus_sc/updates_view.py:87
 msgid "Discombobulating update matrix"
-msgstr "Güncelleme matrisi karıştırılıyor"
+msgstr "Güncelleme dizeyi karıştırılıyor"
 
 #: ../solus_sc/updates_view.py:110
 msgid "Please check back later, updates are now applying"
-msgstr "Şu an güncellemeler uygulanıyor, lütfen daha sonra kontrol ediniz"
+msgstr "Lütfen daha sonra tekrar kontrol ediniz, şimdi güncellemeler uygulanıyor"
 
 #: ../solus_sc/updates_view.py:207
 msgid "Software is up to date"
-msgstr "Uygulama güncel"
+msgstr "Uygulama günceldir"
 
 #. Selection label
 #. No updates currently selected for installation
@@ -796,12 +797,12 @@ msgstr "Güncelleme seçildi"
 #. "2 of 10 updates selected"
 #: ../solus_sc/updates_view.py:538
 msgid "{} of {} updates selected"
-msgstr "{} den {} güncelleme seçildi"
+msgstr "{} / {} güncelleme seçildi"
 
 #. "2 of 10 updates selected (20.05MB to download)"
 #: ../solus_sc/updates_view.py:545
 msgid "{} of {} updates selected ({} to download)"
-msgstr "{} den {} güncelleme seçildi ({} üzerine indir)"
+msgstr "{} / {} güncelleme seçildi ({} indirmek için)"
 
 #: ../solus_update/application.py:301
 msgid "Security updates available"
@@ -819,7 +820,7 @@ msgstr "Uygulama güncellemeleri mevcut"
 
 #: ../solus_update/application.py:307
 msgid "New software updates are available for your device"
-msgstr "Cihazınız için yeni uygulama güncellemeleri mevcut"
+msgstr "Cihazınız için yeni yazılım güncellemeleri mevcut"
 
 #: ../solus_update/application.py:312
 msgid "Open Software Center"
