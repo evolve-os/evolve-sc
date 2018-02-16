@@ -234,5 +234,12 @@
         <Package>libcutl</Package>
         <Package>libcutl-devel</Package>
 
+        <!-- Replaced by materia-gtk-theme //-->
+        <Package>flat-plat-gtk-theme</Package>
+        <Package>flat-plat-gtk-theme-compact</Package>
+        <Package>flat-plat-gtk-theme-dark</Package>
+        <Package>flat-plat-gtk-theme-dark-compact</Package>
+        <Package>flat-plat-gtk-theme-light</Package>
+        <Package>flat-plat-gtk-theme-light-compact</Package>
 	</Obsoletes>
 </PISI>
