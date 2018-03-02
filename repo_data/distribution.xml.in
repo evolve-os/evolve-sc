@@ -240,5 +240,8 @@
         <!-- Kodi now ships this //-->
         <Package>kodi-addon-inputstream-adaptive</Package>
 
+        <!-- Replaced with adwaita-icon-theme //-->
+        <Package>gnome-icon-theme</Package>
+
 	</Obsoletes>
 </PISI>
