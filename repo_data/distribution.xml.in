@@ -240,5 +240,8 @@
         <!-- Kodi now ships this //-->
         <Package>kodi-addon-inputstream-adaptive</Package>
 
+        <!-- Dead upstream, replaced by fork streamlink //-->
+        <Package>livestreamer</Package>
+
 	</Obsoletes>
 </PISI>
