@@ -249,5 +249,12 @@
 
         <!-- Dead upstream, replaced by fork streamlink //-->
         <Package>livestreamer</Package>
+
+        <!-- Deprecated upstream in favour of yubikey-manager-qt //-->
+        <Package>yubikey-neo-manager</Package>
+
+        <!-- Dead upstream, replaced by other py crypto libraries //-->
+        <Package>pycrypto</Package>
+
 	</Obsoletes>
 </PISI>
