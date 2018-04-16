@@ -281,5 +281,12 @@
         <!-- Abandoned upstream with many CVEs pending //-->
         <Package>autotrace</Package>
         <Package>autotrace-devel</Package>
+		
+        <!-- Replaced by filemanager-actions //-->
+        <Package>nautilus-actions</Package>
+        <Package>nautilus-actions-dbginfo</Package>
+        <Package>nautilus-actions-devel</Package>
+        <Package>nautilus-actions-docs</Package>
+
 	</Obsoletes>
 </PISI>
