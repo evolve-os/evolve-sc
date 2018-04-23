@@ -324,5 +324,7 @@
         
         <Package>autotrace</Package>
         <Package>autotrace-devel</Package>
+
+        <Package>python-pygpgme</Package>
 	</Obsoletes>
 </PISI>
