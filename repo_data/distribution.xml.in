@@ -285,5 +285,9 @@
         <!-- Replaced by gnome-tweaks //-->
         <Package>gnome-tweak-tool</Package>
 
+        <!-- gegl3 -> gegl4 //-->
+        <Package>gegl3</Package>
+        <Package>gegl3-devel</Package>
+
 	</Obsoletes>
 </PISI>
