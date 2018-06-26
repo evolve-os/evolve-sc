@@ -9,3 +9,7 @@ StartupNotify=true
 Icon=system-software-install
 Categories=X-GNOME-Settings-Panel;PackageManager;System;Settings
 Keywords=Updates;Upgrade;Sources;Repositories;Preferences;Install;Uninstall;Program;Software;App;Store;
+#Translations
+Name[pl]=Centrum oprogramowania
+GenericName[pl]=Centrum oprogramowania
+Comment[pl]=Instaluj, usuwaj i aktualizuj oprogramowanie

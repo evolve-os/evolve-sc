@@ -10,3 +10,6 @@ OnlyShowIn=Budgie;GNOME;KDE;MATE;
 X-GNOME-Autostart-Phase=Application
 X-GNOME-Autostart-Notify=true
 AutostartCondition=GSettings com.solus-project.software-center check-updates
+#Translations
+Name[pl]=Usługa aktualizacji Solus
+Comment[pl]=Usługa sprawdzająca aktualizacje działająca w tle
