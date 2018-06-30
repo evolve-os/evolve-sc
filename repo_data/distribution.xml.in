@@ -299,5 +299,11 @@
 
         <!-- mypaint to libmypaint //-->
         <Package>mypaint-devel</Package>
+
+       <!-- vulkan to vulkan-loader //-->
+        <Package>vulkan</Package>
+        <Package>vulkan-devel</Package>
+        <Package>vulkan-32bit</Package>
+        <Package>vulkan-32bit-devel</Package>
 	</Obsoletes>
 </PISI>
