@@ -865,6 +865,18 @@
 		</Component>
 
 		<Component>
+			<Name>games.board</Name>
+			<_LocalName>Board Games</_LocalName>
+			<_Summary>Board Games</_Summary>
+			<_Description>Board Games</_Description>
+			<Group>gaming</Group>
+			<Maintainer>
+				<Name>Solus Team</Name>
+				<Email>root@solus-project.com</Email>
+			</Maintainer>
+		</Component>
+
+		<Component>
 			<Name>games.card</Name>
 			<_LocalName>Card Games</_LocalName>
 			<_Summary>Card Games</_Summary>
