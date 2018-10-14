@@ -442,7 +442,7 @@ class PackageDetailsView(Gtk.VBox):
         self.view_stack.add_titled(
             lic_wrap, "license", _("License"))
 
-        reportURI = "https://dev.solus-project.com/maniphest/task/edit/form/1/"
+        reportURI = "https://dev.getsol.us/maniphest/task/edit/form/1/"
         uriLab = Gtk.Label(u"\u2693 <a href=\"{}\">{}</a>".format(
             reportURI,
             _("Report an invalid or missing license")))

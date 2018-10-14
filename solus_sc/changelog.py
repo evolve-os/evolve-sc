@@ -24,7 +24,7 @@ CVE_URI = "https://cve.mitre.org/cgi-bin/cvename.cgi?name={}"
 
 # All TNNNN hits are Maniphest Tasks
 BUG_HIT = re.compile(r"T(\d+)")
-BUG_URI = "https://dev.solus-project.com"
+BUG_URI = "https://dev.getsol.us"
 
 # I know, it's evil. From:
 # http://daringfireball.net/2010/07/improved_regex_for_matching_urls
