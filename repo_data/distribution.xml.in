@@ -400,5 +400,10 @@
         <Package>xineramaproto</Package>
         <Package>xproto</Package>
 
+        <! -- Dead upstream, doesn't compile, isn't used. // -->
+        <Package>libgestures</Package>
+        <Package>libgestures-dbginfo</Package>
+        <Package>libgestures-devel</Package>
+
 	</Obsoletes>
 </PISI>
