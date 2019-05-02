@@ -218,7 +218,7 @@ class ScUpdateApp(Gio.Application):
         if signal == 'finished' or signal is None:
             self.invalidate_all()
             self.build_available_updates()
-        elif str(signal).startswith("tr.org.pardus.comar.Comar.PolicyKit"):
+        elif str(signal).startswith("tr.org.pardus.comar.Comar.PolicyKit") or signal == 'error':
             self.invalidate_all()
 
     def reload_repos(self):
