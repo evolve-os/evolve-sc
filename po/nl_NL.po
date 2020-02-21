@@ -768,15 +768,15 @@ msgstr "Niet geïnstalleerd"
 
 #: ../solus_sc/updates_view.py:87
 msgid "Discombobulating update matrix"
-msgstr "Paniek aan het veroorzaken in de update matrix"
+msgstr "Updates aan het verzamelen"
 
 #: ../solus_sc/updates_view.py:110
 msgid "Please check back later, updates are now applying"
-msgstr "Kom later terug, updates worden nu geïnstalleerd"
+msgstr "Kom later eens terug, het bijwerken is nu aan de gang"
 
 #: ../solus_sc/updates_view.py:207
 msgid "Software is up to date"
-msgstr "De toepassingen zijn bijgewerkt"
+msgstr "De software is bijgewerkt"
 
 #. Selection label
 #. No updates currently selected for installation
