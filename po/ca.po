@@ -763,7 +763,7 @@ msgstr "No instal·lat"
 
 #: ../solus_sc/updates_view.py:87
 msgid "Discombobulating update matrix"
-msgstr "Matriu d'actualització desconcertant"
+msgstr "Es desentortolliga la matriu d'actualització"
 
 #: ../solus_sc/updates_view.py:110
 msgid "Please check back later, updates are now applying"
