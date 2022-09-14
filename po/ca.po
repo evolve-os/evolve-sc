@@ -786,7 +786,7 @@ msgstr "Comprova si hi ha actualitzacions noves"
 #. Apply the updates
 #: ../solus_sc/updates_view.py:302 ../solus_sc/updates_view.py:303
 msgid "Update Selected"
-msgstr "Actualització seleccionada"
+msgstr "Actualitza la selecci"
 
 #. "2 of 10 updates selected"
 #: ../solus_sc/updates_view.py:538
